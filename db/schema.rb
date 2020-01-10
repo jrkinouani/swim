@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191121113900) do
+ActiveRecord::Schema.define(version: 20200110154251) do
 
   create_table "adhesions", force: :cascade do |t|
     t.string "name"
@@ -214,6 +214,7 @@ ActiveRecord::Schema.define(version: 20191121113900) do
     t.string "name"
     t.string "phone"
     t.string "creneau"
+    t.datetime "start_date"
     t.index ["aquagym_id"], name: "index_reservationgyms_on_aquagym_id"
   end
 
